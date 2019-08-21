@@ -63,7 +63,5 @@ module.exports = {
         logo: {
             selector: ".logo"
         },
-
-        
     }
 }

@@ -6,4 +6,4 @@ module.exports = {
     phone: '+375 29 222 22 22',
     department: 'Support',
     comments: 'Test comments'
-}
+};

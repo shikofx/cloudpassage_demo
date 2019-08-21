@@ -4,11 +4,11 @@ var partnerData;
 module.exports = {
     
     before: function(browser){
-        contactPage = browser.page.contactPage();
         partnerData = browser.globals.partnerData;
+        contactPage = browser.page.contactPage();
     },
 
-    beforeEach: function(browser){
+    beforeEach: function(){
         contactPage.navigate();
         contactPage.clearPartnerForm();
     }, 
@@ -22,7 +22,7 @@ module.exports = {
     },
 
     '@tags': ['filling', 'smoke', 'positive', 'contact'],
-    'send valid partner data:' (browser) {
+    'send valid partner data:' () {
         
         contactPage
             .fillPartnerForm(partnerData)

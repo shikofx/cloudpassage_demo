@@ -4,7 +4,7 @@
   "description": "Create variouse tests with using of Nightwatch framework",
   "main": "contactHead.js",
   "scripts": {
-    "lint": "eslint .",
+    "lintn": "eslint .",
     "debug": "node --inspect-brk node_modules/nightwatch/bin/nightwatch",
     "test": "nightwatch"
   },
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "chromedriver": "^76.0.0",
-    "eslint": "^6.1.0",
+    "eslint": "^6.2.1",
     "nightwatch": "^1.2.1"
   },
   "repository": "https://github.com/shikofx/cloudpassage-demo.git"

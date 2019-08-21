@@ -30,10 +30,11 @@ var sendPartnerDataCommands = {
     },
 
     recaptchaSelect: function() {
+        
         this.waitForElementPresent('@recaptcha', 2000, null, null, "Contact page: wait for recaptcha checkbox presence")
             .waitForElementVisible('@recaptcha', 2000, null, null, "Contact page: wait for recaptcha checkbox visibility")
             .click('@recaptcha')
-            .pause(2000)
+            .pause(5000)
         return this;
     }, 
 
