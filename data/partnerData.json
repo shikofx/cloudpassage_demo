@@ -1,0 +1,22 @@
+
+{
+        "valid": {
+        "firstName":    "Test",                        
+        "lastName":     "Partner",                     
+        "email":        "testpartner@test.partner",    
+        "companyName":  "Test Company",                
+        "phone":        "+375 29 222 22 22",           
+        "department":   "Support",                     
+        "comments":     "Test comments"
+        },
+
+    "unvalid": {
+        "firstName":    "Test1",                        
+        "lastName":     "Partner1",                     
+        "email":        "testpartner1@test.partner",    
+        "companyName":  "Test Company1",                
+        "phone":        "+375 29 222 22 21",           
+        "department":   "Support1",                     
+        "comments":     "Test comments1"
+    }
+}
