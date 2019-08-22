@@ -43,7 +43,7 @@ module.exports = {
     '@tags': ['navigation', 'smoke', 'positive', 'contact'],
     'go to contact page with head toolbar navigation' : function () {
         headerOfPage.section.headToolbar
-                .waitForElementVisible('@contact', null, null, 'Header: wait for toolbar will be visible')
+                .waitForElementVisible('@contact', 'Header: wait for toolbar will be visible')
                 .click('@contact');
         
         verifyContactPageContent(contactPage);
@@ -51,11 +51,11 @@ module.exports = {
 
     'go to contact page with menu navigation' : function () {
         headerOfPage.section.headMenu
-            .waitForElementVisible('@company', 3000, null, null, 'Header: wait for menu  will be visible')
+            .waitForElementVisible('@company', 3000, 'Header: wait for menu  will be visible')
             .click('@company')
             
         companyPage.section.submenu
-            .waitForElementVisible('@contact', 3000, null, null, 'Company page: wait for navigation menu  will be visible')
+            .waitForElementVisible('@contact', 3000, 'Company page: wait for navigation menu  will be visible')
             .click('@contact');
 
         verifyContactPageContent(contactPage);
@@ -63,7 +63,7 @@ module.exports = {
     
     'go to contact page with footer site map navigation' : function() {
         footerOfPage.section.sitemap
-            .waitForElementVisible('@contact', 3000, null, null, 'Footer: wait for footer  will be visible')
+            .waitForElementVisible('@contact', 3000, 'Footer: wait for footer  will be visible')
             .click('@contact');
         
         verifyContactPageContent(contactPage);
@@ -71,7 +71,7 @@ module.exports = {
 
     'go to contact page with footer button menu navigation' : function() {
         footerOfPage.section.buttonMenu
-            .waitForElementVisible('@contact', 3000, null, null, 'Footer: wait for footer  will be visible')
+            .waitForElementVisible('@contact', 3000, 'Footer: wait for footer  will be visible')
             .click('@contact');
 
         verifyContactPageContent(contactPage);  
@@ -79,7 +79,7 @@ module.exports = {
 
     'go to contact page with footer navigation' : function () {
         footerOfPage.section.footer
-            .waitForElementVisible('@contact', 3000, null, null, 'Footer: wait for footer  will be visible')
+            .waitForElementVisible('@contact', 3000, 'Footer: wait for footer  will be visible')
             .click('@contact');
         
         verifyContactPageContent(contactPage);  

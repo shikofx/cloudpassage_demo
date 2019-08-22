@@ -1,6 +1,6 @@
 {
     "src_folders" : ["tests"],
-    "page_objects_path" : ["pages"],
+    "page_objects_path" : "pages",
     "globals_path": "globals.js",
     
     "webdriver" : {
@@ -21,20 +21,6 @@
             }
         }, 
   
-        "chrome" : {
-            "webdriver": {
-                "port": 9515,
-                "server_path": "./node_modules/chromedriver/lib/chromedriver/chromedriver",
-                "cli_args": [
-                "--verbose"
-                ]
-            },
-            "desiredCapabilities" : {
-                "browserName" : "chrome",
-                "loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "INFO"}
-            }
-        },
-
         "chromeheadless": {
             "selenium_port": 9515, 
             "selenium_host": "localhost",
