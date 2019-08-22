@@ -12,12 +12,13 @@
   "author": "Dzmitry Parkheichuk <shikofx@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "acorn-jsx": "^5.0.1",
-    "geckodriver": "^1.16.2"
+    "nightwatch-data-driven": "0.0.8"
   },
   "devDependencies": {
+    "babel-preset-es2019": "^1.0.0",
     "chromedriver": "^76.0.0",
     "eslint": "^6.2.1",
+    "geckodriver": "^1.16.2",
     "nightwatch": "^1.2.1"
   },
   "repository": "https://github.com/shikofx/cloudpassage-demo.git"
